@@ -57,7 +57,7 @@
 				<gravity>1</gravity>
 			</link>
 			<link name='camera_link'>
-				<pose>0 0 2.4364 0 1.57 1.57</pose> <!-- camera placed at a heigth of 8 feet-->
+				<pose>0 0 4.8768 0 1.57 1.57</pose> <!-- camera placed at a heigth of 16 feet-->
 				<inertial>
 					<mass>0.1</mass>
 					<inertia>
@@ -130,18 +130,7 @@
 		</model>
 		
 
-		<!-- Overhead camera model -->
-<!-- 		<model name ="overhead_camera">
-			<include>
-				<pose>0 0 2.4384 0 1.57 0</pose>
-				<uri>model://ros_camera</uri>
-			</include> -->
-			<!-- <joint name = "joint_to_world" type="fixed">
-				<parent>world</parent>
-				<child>camera::link</child>
-			</joint> -->
-		<!-- </model> -->
-
+		
 		<!-- Only one ROS interface plugin is required per world, as any other plugin can connect a Gazebo
 		topic to a ROS topic (or vise versa). -->
 		<plugin name="ros_interface_plugin" filename="librotors_gazebo_ros_interface_plugin.so"/>
